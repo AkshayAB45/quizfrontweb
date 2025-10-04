@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to our custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="quiz-container">
+        <!-- Header Section -->
+        <header class="quiz-header">
+            <h1 class="quiz-title">General Knowledge Quiz</h1>
+            <div class="score-box">
+                Score: <span id="score">0</span>
+            </div>
+        </header>
+
+        <!-- Question Area Section -->
+        <section id="question-area">
+            <h2 id="question-text" class="question-text">Question placeholder text goes here...</h2>
+            <div id="options-container" class="options-grid">
+                <!-- Option buttons will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Results Area Section -->
+        <section id="results-area" class="results-area hidden">
+            <h2 class="results-title">Quiz Completed!</h2>
+            <p class="results-score">
+                Your final score is <span id="final-score">0</span> out of <span id="total-questions">0</span>.
+            </p>
+            <p id="result-message" class="results-message">Great job!</p>
+        </section>
+
+        <!-- Footer Section with control buttons -->
+        <footer class="quiz-footer">
+            <button id="next-button" class="btn btn-next hidden">Next Question</button>
+            <button id="restart-button" class="btn btn-restart hidden">Try Again</button>
+        </footer>
+    </main>
+
+    <!-- Link to our JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
